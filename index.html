@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TaeHui's portfolio</title>
+    <meta name="author" content="taehui">
+    <meta name="description" content="portfolio for taehui">
+
+    <!-- 폰트 삽입 -->
+    <script src="https://kit.fontawesome.com/9bf966ae4b.js"
+      crossorigin="anonymous">
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400;1,600&display=swap"
+      rel="stylesheet"/>
+
+      <!-- 아이콘 삽입 -->
+    <link rel="icon" type="image/png" href="image/icon.png"/>
+ 
+    <!-- css, js 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer>
+
+    </script>
+.
+  <body>
+    <nav id="navbar">
+      <div class="navbar_logo">
+        <i class="fab fa-audible"></i>
+        <a href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400;1,600&display=swap">Taehui kim</a>
+      </div>
+      <div class="navbar_menu">
+        <ul class="navbar_menu">
+          <li class="navbar_menu_item active" data-link = "#home"> Home</li>
+          <li class="navbar_menu_item" data-link = "#about" >About</li>
+          <li class="navbar_menu_item" data-link = "#skills" >Skills</li>
+          <li class="navbar_menu_item" data-link = "#work" >My works</li>
+          <li class="navbar_menu_item" data-link = "#testimonials" >Testimonial</li>
+          <li class="navbar_menu_item" data-link = "#contact" >Contact</li>
+        </ul>
+      </div>
+
+      <button class="navbar_toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <section id = "home">
+      <div class="home_container">
+        <img src="image/1.png" 
+          alt="taehui's photo" 
+          class="home_avatar">
+        <h1 class="home_title">Kim taehui</h1>
+        <h2 class="home_description"> 끊임없이 노력하는 Junior Frontend Engineer.</h2>
+        <button class="home_contact" name="button">contact me</button>
+      </div>
+    </section>
+    <section id="about" class= "section section_container">
+      <h1>About me</h1>
+      <p>나를 잘 어필 할 수 있는 문장과 프로젝트 설명</p>
+      
+      <div class="about_majors">
+      <div class="mjor">
+        <div class="mjor_icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="mjor_title">
+          <h2>Front-end</h2>
+        </div>
+        <div class="mjor_description">HTML,CSS,Javascript</div>
+      </div>
+
+      
+      <div class="mjor">
+        <div class="mjor_icon">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="mjor_title">
+          <h2>React</h2>
+        </div>
+        <div class="mjor_description">....</div>
+      </div>
+
+      <div class="mjor">
+        <div class="mjor_icon">
+          <i class="fab fa-node-js"></i>
+        </div>
+        <div class="mjor_title">
+          <h2>Back-end</h2>
+        </div>
+        <div class="mjor_description">nodejs</div>
+      </div>
+      </div>
+
+      <div class="about_jobs" >
+        <div class="job_description">
+          <img src="" alt="samsung" class="job_logo">
+          <p class="job_name">Front End Engineer, 우아한 형제들</p>
+          <p class="job_period">2023.08.03~2026.12.15</p>
+        </div>
+      </div>
+    
+
+    </section>
+    <section id="skills" class= "section">
+      <div class="section_container">
+      <h1>skills</h1>
+      <h2>Skills & attributes</h2>
+
+      <div class="skillset">
+
+        <div class="skillset_left">
+          <h3 class="skillset_title">skills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 90%;"></div>
+            </div>
+
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value"style="width: 80%;"></div>
+            </div>
+
+            <div class="skill_description">
+              <span>JS</span>
+              <span>70%</span>
+            </div>
+
+            <div class="skill_bar">
+              <div class="skill_value"style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skillset_right">
+          <div class="tools">
+            <div class="skillset_title">tools</div>
+            <ul class="tools_list">
+              <li><span>1</span></li>
+              <li><span>2</span></li>
+              <li><span>3</span></li>
+              <li><span>4</span></li>
+              <li><span>5</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <div class="skillset_title">etc</div>
+            <ul class="etc_list">
+              <li><span>git</span></li>
+              <li><span>2</span></li>
+              <li><span>3</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+    <section id="work" class= "section">
+      <div class="section_container">
+        <h1>My work</h1>
+      <h3>projects</h3>
+      <div class="work_categories">
+        <button class="category_btn active" data-filter = "*">All<span class="category__count">8</span></button>
+        <button class="category_btn" data-filter = "front-end"> Front_end<span class="category__count">3</span></button>
+        <button class="category_btn" data-filter = "back-end">3<span class="category__count">3</span></button>
+        <button class="category_btn" data-filter = "mobile">4<span class="category__count">2</span></button>
+      </div>
+
+      <div class="work__projects">
+        <a href="주소" class="project" target="blank" data-type = "front-end">
+          <img src="image/youtube.JPG" alt="youtube" class="project_img">
+          <div class="project_description">
+            <h3>youtube site</h3>
+            <span>clone coding with HTML and css</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type = "back-end">
+          <img src="image/youtube.JPG" alt="else" class="project_img">
+          <div class="project_description">
+            <h3>other service</h3>
+            <span>clone coding</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type = "mobile">
+          <img src="image/youtube.JPG" alt="else" class="project_img">
+          <div class="project_description">
+            <h3>other service</h3>
+            <span>clone coding</span>
+          </div>
+        </a>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="testimonials" class= "section">
+      <div class="section_container">
+        <h1>Testimonial</h1>\
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="image/people1.jpg" alt="people" class="testimonial_pic">
+          <div class="testimonial_speech-bubble">
+            <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+            <p class="name"><a href="">Taehui</a>/samsung</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          
+          <div class="testimonial_speech-bubble">
+            <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+            <p class="name"><a href="">Taehui</a>/samsung</p>
+          </div>
+          <img src="image/people1.jpg" alt="people" class="testimonial_pic">
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact" class= "section">
+      <h1 class="contact_title">Let's talk</h1>
+      <h2 class="contact_email">xogml7734@naver.com</h2>
+      <div class="contact_link">
+          <a href="깃허브" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+    </section>
+
+    <button class="arrow-up">
+      <script src="https://kit.fontawesome.com/9bf966ae4b.js" crossorigin="anonymous"></script>
+      <i class="fa-regular fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
